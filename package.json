@@ -1,0 +1,28 @@
+{
+  "name": "reinaldo-uploadthing-test",
+  "version": "1.0.0",
+  "main": "index.js",
+  "workspaces": [
+    "packages/frontend",
+    "packages/backend"
+  ],
+  "private": true,
+  "scripts": {
+    "dev": "concurrently \"npm run -w backend dev\" \"npm run -w frontend dev\"",
+    "build": "npm run build --workspaces",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "description": "",
+  "dependencies": {
+    "uploadthing": "^7.2.0"
+  },
+  "devDependencies": {
+    "@rspack/cli": "^1.0.14",
+    "@rspack/core": "^1.0.14",
+    "concurrently": "^9.0.1",
+    "ts-node": "^10.9.2"
+  }
+}
