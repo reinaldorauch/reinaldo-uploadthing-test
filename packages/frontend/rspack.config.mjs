@@ -8,7 +8,7 @@ const __dirname = import.meta.dirname;
 const config = {
     entry: path.resolve(__dirname, "src", "index.js"),
     output: {
-        filename: '[name].bundle.js',
+        filename: '[name].bundle.[hash].js',
         path: path.resolve(__dirname, 'dist'),
         clean: true
     }, plugins: [new HtmlRspackPlugin({
