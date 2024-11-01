@@ -5,8 +5,7 @@
     "private": true,
     "scripts": {
         "start": "node ./src/main.js",
-        "dev": "nodemon src/main.js",
-        "build": "rspack build"
+        "dev": "nodemon src/main.js"
     },
     "dependencies": {
         "cors": "^2.8.5",
